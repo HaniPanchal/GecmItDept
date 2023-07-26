@@ -1,0 +1,205 @@
+h1{
+    background-color: lightslategray;
+    color: white;
+    text-align: center;
+    margin: 10px ;
+    padding: 10px;
+}
+
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* CSS Variables */
+:root{
+   --navbar-height: 59px;
+}
+
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+   
+}
+
+/*Navigation Bar: Logo and Image */
+#logo{
+   margin: 10px 34px;
+}
+#logo img{
+   height: 59px;
+   margin: 3px 6px;
+}
+
+/* Navigation Bar:List styling */
+#navbar ul{
+    display: flex;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+#navbar ul li{
+   
+   list-style: none;
+   font-size: 1.3rem;
+}
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+ }
+ #navbar ul li a:hover{
+    color: black;
+    background-color: white;
+    
+    
+ }
+ /* Home section */
+ #home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 570px;
+    justify-content: center;
+    align-items: center;
+ }
+
+ #home::before{
+    content: "";
+    position: absolute;
+    background: url(images/backgi.jpg) no-repeat center center/cover;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+ }
+ #home h1{
+    color: white;
+    text-align: center;
+ }
+ #home p{
+    color: black;
+    text-align: center;
+    font-size: 1.0rem;
+    margin: 20px;
+ }
+ /* facilities section */
+ #facilities{
+     margin: 34px;
+     display: flex;
+ }
+ #facilities .box{
+  border: 2px solid brown;
+  padding: 34px;
+  margin: 3px 6px;
+  border-radius: 28px;
+  background: lightgrey;
+}
+#facilities .box img{
+   height: 160px;
+   margin: auto;
+   display: block;
+ }
+ #facilities .box p{
+  font-family: 'Bree Serif',serif;
+ }
+
+ 
+/* clients section */
+
+
+ /* utility classes */
+ .h-primary{
+    background-color: lightslategray;
+    font-size: 2.8rem;
+    padding: 12px;
+   
+ }
+.h-secondary{
+   font-size: 2.3rem;
+   padding: 12px;
+
+}
+ /* .faculties img{
+   height: 150px;
+   width: 150px;
+   display: block;
+   margin-right: 1000px;
+ }
+ .faculties .h-third{
+    text-align: center;
+    color: rgb(95, 95, 225) ;
+   }
+   
+  */
+  .faculties .table{
+   display: block;
+  border-right: 2px solid rgb(95, 95, 225);
+  
+}
+.faculties.third{
+  border: 2px solid black;
+}
+.title{
+  text-align: center;
+  color: rgb(0, 166, 255);
+  font-size: 2.5rem;      
+   /* background-color: white;  */
+    /* height: 30px;
+    width: 100px;
+    */
+}
+/* *{
+  box-sizing: border-box;
+} */
+/* .subjecttable{
+  
+      border: 5px solid rgb(95, 95, 225);
+      width: 50%;
+      box-sizing: border-box;
+      display: flex;
+
+  
+} */
+
+footer{
+   background-color: black;
+   color: white;
+   padding: 9px 20px;
+}
+/* table{
+   border-collapse: collapse;
+}
+table tr th{
+   background-color: black;
+   color: white;
+   padding: 5px;
+}
+table tr th{
+   border-right: 1px solid;
+   padding: 5px;
+} */
+.subjecttable{
+   display: flex;
+}
+.table-1{
+   margin-right: 150px;
+   margin-left: 150px;
+}
+ 
+
